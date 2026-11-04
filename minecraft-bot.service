@@ -1,0 +1,18 @@
+[Unit]
+Description=Minecraft AFK Bot
+After=network.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/minecraft-bot
+ExecStart=/usr/bin/python3 /home/ubuntu/minecraft-bot/bot.py
+Restart=always
+RestartSec=10
+StandardOutput=append:/home/ubuntu/minecraft-bot/bot.log
+StandardError=append:/home/ubuntu/minecraft-bot/bot.log
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target

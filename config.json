@@ -1,0 +1,9 @@
+{
+  "host": "szkolnesmpszymnonka.aternos.me",
+  "port": 18824,
+  "username": "Bot24/7",
+  "version": "1.21.11",
+  "reconnect_delay": 10,
+  "reconnect_max_delay": 60,
+  "auth": "offline"
+}
